@@ -23,14 +23,14 @@ public class Car : MonoBehaviour
    
     void Update()
     {
-        horizontalInput = Input.GetAxis("Vertical");
+        verticalInput = Input.GetAxis("Vertical");
         {
-            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime * verticalInput);
         }
 
         horizontalInput = Input.GetAxis("Horizontal");
         {
-            transform.Translate(Vector2.right * turnSpeed * Time.deltaTime);
+            transform.Rotate(Vector2.right * turnSpeed * Time.deltaTime * horizontalInput);
         }
 
         /*
