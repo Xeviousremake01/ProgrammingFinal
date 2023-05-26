@@ -15,10 +15,18 @@ using UnityEngine;
  *      - Change the speed back to the originalSpeed
  * 
  */
-public class SpeedPickup : MonoBehaviour
+/*public class SpeedPickup : MonoBehaviour
 {
     public float originalSpeed;
     public float boostedSpeed;
 
 
+    public override void Activate()
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+        }
+    }
 }
+*/
